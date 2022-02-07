@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/* CSS Reset  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body{
+    background: url('./images/bg-pattern-top.svg'),
+    url('./images/bg-pattern-bottom.svg');
+    background-position: top -950px left -700px, bottom -1150px right -550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(185, 75%, 39%);
+    font-size: 18px;
+    background-blend-mode: overlay;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+/* CARD */
+#pattern{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+#face{
+    margin-top: -60px;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+.entire{
+    /* border: 2px solid black; */
+    background-color: white;
+    width: 21.9rem;
+    height: 23rem;
+    border-radius: 15px;
+    text-align: center;
+}
+/* Before hr */
+.flex1{
+    display: flex;
+    justify-content: center;
+}
+#name{
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+#age{
+    color: hsl(0, 0%, 59%);
+}
+#place{
+    margin-top: 5px;
+    font-size: 14px;
+    color: hsl(0, 0%, 59%);
+}
+hr{
+    margin-top: 25px;
+    color:hsl(0, 0%, 59%);
+    opacity: 0.5;
+}
+
+.belowhr{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    
+}
+.belowhr h3{
+    font-size: 18px;
+    color: hsl(229, 23%, 23%);
+}
+.belowhr p{
+    font-size: 13px;
+    color: hsl(0, 0%, 59%);
+    line-height: 20px;
+}
+
+/* Media queries */
+
+@media only screen and (max-width:1350px){
+    body{
+        background-position: top -800px left -600px, bottom -900px right -500px;
+    }
+}
+
+@media only screen and (max-width:1100px){
+    body{
+        background-position: top -600px left -500px, bottom -700px right -400px;
+    }
+}
+
+@media only screen and (max-width:850px){
+    body{
+        background-position: top -400px left -400px, bottom -500px right -300px;
+    }
+}
+
+@media only screen and (max-width: 430px){
+    body{
+    background-position: top -300px left -400px, bottom -350px right -300px;
+    }
+}
+@media only screen and (max-width:380px){
+    body{
+        background-position: top -400px left -400px, bottom -400px right -350px;
+    }
+}
